@@ -1,0 +1,119 @@
+# Uncle JJ – Masterplan
+
+## 📌 Overview & Objectives
+
+Uncle JJ is a soulful, AI-powered digital mentor who offers drop-in voice and text conversations to curious, growth-minded individuals. Designed for those seeking motivation, clarity, or a dose of real talk, Uncle JJ delivers emotionally resonant insights using a mix of pre-written wisdom snippets and AI-generated elaboration. His tone is relaxed, cinematic, and grounded—think porch talk at golden hour.
+
+This project is a creative experiment and personal tool for a values-aligned community. It prioritizes vibe, character, and emotional depth over traditional productivity metrics.
+
+---
+
+## 🎯 Target Audience
+
+- Millennials and Gen Z navigating life, career, or purpose  
+- Creators, freelancers, and founders in reflection mode  
+- Soul-searchers who want insight without formal therapy or self-help clichés  
+- People who value voice-driven, characterful interaction
+
+---
+
+## 🧩 Core Features & Functionality
+
+- **Minimal Homepage**
+  - Just a speech bubble icon and gentle microcopy: “Got something on your mind?”
+  - Users speak or type first — that’s the trigger for Uncle JJ to respond
+
+- **Conversation Interface**
+  - Users send messages via voice or text
+  - Uncle JJ replies with AI-generated voice and matching transcript
+  - No mood picker — AI interprets tone and selects fitting mood (inspire, truth, entertain)
+
+- **Wisdom System**
+  - Admin-curated library of story fragments, life lessons, and JJ-isms
+  - Tagged by mood and theme (career, love, focus, etc.)
+  - Used as structured input for AI prompting
+
+- **Admin Dashboard**
+  - Upload and tag content
+  - AI-assisted mood/theme tagging (optional)
+  - Manage story snippets and future voice assets
+
+---
+
+## ⚙️ Tech Stack (Recommended)
+
+- **Frontend:** Next.js 14 + Tailwind CSS + shadcn/ui  
+- **Backend & Storage:** Supabase (Postgres)  
+- **Voice:** ElevenLabs or Play.ht  
+- **AI:** OpenAI API (story injection + prompt engineering)  
+- **Auth:** Anonymous (no login needed), Supabase auth for Admin only  
+- **Hosting:** Vercel or similar
+
+---
+
+## 🧠 Conceptual Data Model
+
+**Supabase Tables:**
+- `stories`: text content, tags (mood, theme), optional audio
+- `messages`: user messages + JJ's replies, mood interpretation
+- `mood_tags` and `theme_tags`: taxonomy for content filtering
+
+---
+
+## 🎨 UI & UX Principles
+
+- Mobile-first, minimal, warm
+- Font combo: Playfair Display (headings) + Inter (UI/body)
+- Colors: earthy brown (`#4E3A2D`), sunset peach (`#FDBA74`), warm neutrals
+- Gentle animation (waveforms, fades)
+- Emotional priority over features
+
+---
+
+## 🔒 Security Considerations
+
+- No PII collected  
+- Anonymous usage only  
+- Admin dashboard requires auth  
+- Option to log messages for learning, not linked to user identity
+
+---
+
+## 🛠 Development Phases
+
+### Phase 1 – MVP
+- Core homepage with minimal interface
+- Speech input + text fallback
+- Basic JJ reply system via OpenAI
+- Pre-recorded voice replies (static generation)
+
+### Phase 2 – AI-Powered Core
+- Mood detection from user input
+- Dynamic story injection from Supabase
+- ElevenLabs custom voice
+- Admin dashboard w/ tagging
+
+### Phase 3 – Optional Expansion
+- JJ Moments (bookmark/share quotes)
+- Community-submitted stories
+- Journaling tools
+- Push notifications or daily check-ins
+
+---
+
+## 🚧 Potential Challenges
+
+- Prompt tuning to keep JJ’s voice consistent
+- Voice generation speed (latency)
+- Making mood detection feel intuitive
+- Keeping emotional tone balanced (not preachy or cliché)
+
+---
+
+## 🌱 Future Possibilities
+
+- Multiple JJ personas / vibes
+- Story playlist builder (for creators)
+- Public quote board
+- Companion mobile app
+
