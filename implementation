@@ -1,0 +1,42 @@
+# Uncle JJ – Implementation Plan
+
+## 🧭 Overview
+
+This is a soulful side project with a focus on vibes, creativity, and emotional connection. The plan is to build iteratively, starting with a minimal viable product (MVP) and expanding based on feedback and inspiration.
+
+---
+
+## 🚀 Phase 1: MVP
+
+### Goals
+
+- Establish the core experience: a user initiates a conversation, and Uncle JJ responds with voice and text.
+- Create a minimal, inviting homepage.
+- Implement basic AI response generation.
+
+### Tasks
+
+- **Frontend**
+  - Build a minimal homepage with a speech bubble icon and "Got something on your mind?" prompt.
+  - Implement voice and text input capabilities.
+  - Display Uncle JJ's responses in text and play generated voice audio.
+
+- **Backend**
+  - Set up Supabase for storing story snippets and message logs.
+  - Integrate OpenAI API for generating responses based on user input and selected mood.
+
+- **Voice**
+  - Use ElevenLabs or Play.ht to generate Uncle JJ's voice responses.
+
+- **Admin**
+  - No admin dashboard in MVP; content managed directly in Supabase.
+
+---
+
+## 🌟 Phase 2: AI-Powered Core
+
+### Goals
+
+- Enhance AI capabilities to detect user mood and select
+::contentReference[oaicite:0]{index=0}
+ 
